@@ -1,4 +1,4 @@
-# 📘 README – Entendendo Animações com CSS e Eventos de Scroll em JavaScript
+# 📘 Entendendo Animações com CSS e Eventos de Scroll em JavaScript
 
 Este projeto foi criado com o objetivo de **ensinar conceitos fundamentais de animação em CSS** e o **uso do evento de scroll no JavaScript**, integrando front-end moderno de maneira prática e visual.
 
@@ -122,3 +122,4 @@ Isso fornece base para criar:
 * animações de interface
 * menus reativos
 * experiências de navegação compostas
+
