@@ -72,6 +72,9 @@ header.scrolled {
     background-position: 0%;
   }
 }
+
+
+
 .teste {
   margin-top: 150px;
   padding: 1rem;
@@ -127,4 +130,108 @@ header.scrolled {
     margin-left: 15px;
     font-size: 16px;
   }
+}
+
+
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icons-container i {
+  font-size: 48px;
+}
+
+/* ⚡ estrela */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #5b5be7);
+  }
+  50% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 12px #5b5be7);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #5b5be7);
+  }
+}
+.icon-glow {
+  animation: pulseGlow 1.5s infinite ease-in-out;
+  color: #f7d154;
+}
+
+/* ⚙ engrenagem */
+@keyframes spinSmooth {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.icon-spin {
+  animation: spinSmooth 4s linear infinite;
+}
+
+/* 🔔 sino */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(1deg); }
+}
+.icon-wobble {
+  animation: wobble 1s infinite ease-in-out;
+}
+
+/* ⭐ HEARTBEAT */
+  @keyframes heartbeat {
+    0%, 40%, 80%, 100% { transform: scale(1); }
+    20%, 60% { transform: scale(1.25); }
+  }
+.icon-heartbeat {
+  animation: heartbeat 1.2s infinite;
+}
+
+/* 🔥 PISCAR raio */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .2; }
+}
+.icon-blink {
+  animation: blink 1s infinite;
+}
+
+/* 🚀 PULAR foguete */
+@keyframes bounceUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+.icon-bounce {
+  animation: bounceUp 1s infinite;
+}
+
+/* ↕ FADE UP */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+/* 🔄 FLIP 3D */
+@keyframes flip3d {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+.icon-flip {
+  animation: flip3d 2s linear infinite;
 }
